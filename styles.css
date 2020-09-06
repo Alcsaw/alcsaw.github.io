@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Roboto:wght@100;400;500&display=swap');
+
+:root {
+  --bg: #130f0d;
+  --color-shadow: #9ecaed;
+  --color-primary: #3c72df;
+  --color-primary-ligther: #548af5;
+  --color-secondary: #fd951f;
+  --color-secondary-ligther: #ffd20b;
+  --color-secondary-darker: ##FF7A3C;
+  --color-tertiary: #04D361;
+  --color-text-primary: #f0f0f9;
+  --color-text-secondary: #fff;
+  font-size: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+  color: var(--color-text-primary);
+}
+
+p, li {
+  font: 400 1.8rem Roboto;
+}
+
+.header {
+  margin-top: 0.8rem;
+  margin-bottom: 1.6rem;
+  padding: 0.8rem 1.6rem;
+
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.header h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.name {
+  color: var(--color-primary);
+  font-family: 'Covered By Your Grace';
+  font-size: 4rem;
+}
+
+.short-description {
+  font-weight: 100;
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-secondary-ligther);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-top: 0.4rem;
+}
+
+nav a {
+  margin-left: 0.8rem;
+}
+
+main {
+  margin: 0.8rem 2.4rem
+}
+
+section {
+  margin-bottom: 1.6rem;
+  line-height: 1.4rem;
+}
+
+section h2 {
+  margin-bottom: 1.6rem;
+  color: var(--color-primary);
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+ul {
+  padding-left: 1.6em;
+}
+
+section a {
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  /* color: var(--color-primary-ligther); */
+  font-weight: 700;
+}
+
+footer {
+  text-align: end;
+  color: #444;
+}
+
+footer a {
+  text-decoration: none;
+  color: #555;
+}
+
+@media (min-width: 700px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    max-width: 700px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px var(--color-shadow);
+  }
+}
